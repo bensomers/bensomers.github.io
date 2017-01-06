@@ -39,38 +39,6 @@
 
       </header>
 
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Development</h4>
-          <p class="resume-item-copy">Ruby, Rails, Jquery, Backbone.js, Selenium, Elasticsearch, Python, scikit-learn (machine learning), Sinatra, Java, C, C++</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Systems Automation</h4>
-          <p class="resume-item-copy">Chef, Capistrano</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Hosting</h4>
-          <p class="resume-item-copy">AWS, Heroku, Rackspace, Colo</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Open Source</h4>
-          <p class="resume-item-copy">Maintainer for Improved Rack/Throttle. Contributor to Rails, Chef, and others.</p>
-        </div>
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
-
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
       <section class="content-section">
@@ -115,6 +83,38 @@
 
       </section>
       <!-- end Experience -->
+      {% endif %}
+
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Development</h4>
+          <p class="resume-item-copy">Ruby, Rails, Jquery, Backbone.js, Selenium, Elasticsearch, Python, scikit-learn (machine learning), Sinatra, Java, C, C++</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Systems Automation</h4>
+          <p class="resume-item-copy">Chef, Capistrano</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Hosting</h4>
+          <p class="resume-item-copy">AWS, Heroku, Rackspace, Colo</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Open Source</h4>
+          <p class="resume-item-copy">Maintainer for Improved Rack/Throttle. Contributor to Rails, Chef, and others.</p>
+        </div>
+
+      </section>
+      <!-- end Skills -->
       {% endif %}
 
       {% if site.resume_section_education %}
