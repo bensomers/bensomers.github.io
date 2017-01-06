@@ -27,7 +27,7 @@
         </div>
 
         <div class="executive-summary" itemprop="description">
-          <p>This is the executive summary. You should write a few brief, concise, and meaningful sentences about yourself from a professional context, and your immediate career goals. Make the length appropriate for your needs, but K.I.S.S.</p>
+          <p>Versatile and agile engineer, with experience building web applications in Ruby, Rails, and Python. Skilled with frontend, backend, and infrastructure development. Preference for full- stack development, opportunities to learn new technologies and problem domains, and flexible and innovative teams with an emphasis on agile methods though not necessarily Agile dogma.</p>
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
@@ -39,6 +39,38 @@
 
       </header>
 
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Development</h4>
+          <p class="resume-item-copy">Ruby, Rails, Jquery, Backbone.js, Selenium, Elasticsearch, Python, scikit-learn (machine learning), Sinatra, Java, C, C++</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Systems Automation</h4>
+          <p class="resume-item-copy">Chef, Capistrano</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Hosting</h4>
+          <p class="resume-item-copy">AWS, Heroku, Rackspace, Colo</p>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Open Source</h4>
+          <p class="resume-item-copy">Maintainer for Improved Rack/Throttle. Contributor to Rails, Chef, and others.</p>
+        </div>
+
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+
       {% if site.resume_section_experience %}
       <!-- begin Experience -->
       <section class="content-section">
@@ -49,33 +81,37 @@
 
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Springfield Nuclear Power Plant</h3>
-          <h4 class="resume-item-details" itemprop="description">Safety Inspector &bull; Nov, 1980 &mdash; Present</h4>
-          <p class="resume-item-copy">Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points:</p>
-          <ul class="resume-item-list">
-            <li>Ate lots of donuts</li>
-            <li>Fell asleep rarely</li>
-            <li>Left promptly at end of day (sometimes earlier)</li>
-          </ul>
-          <p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p>
-
-        </div><!-- end of resume-item -->
+          <h3 class="resume-item-title" itemprop="name">HealthSherpa</h3>
+          <h4 class="resume-item-details" itemprop="description">Senior Software Engineer &bull; Jun, 2013 &mdash; Present</h4>
+          <p class="resume-item-copy">First employee for a health insurance startup, helped grow the company to 30+ employees and 10k+ concurrent users. Developed backend in Ruby on Rails and frontend using Backbone.js and React.js. Wrote specialized Python system for machine-learning tasks. Took charge of DevOps efforts and used Chef to build a scaling EC2 cluster to handle high- complexity high-reliability worker queues.</p>
+        </div> <!-- end of resume-item -->
 
         <!-- another resume item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Sir Putt-A-Lot's Merrie Olde Fun Centre</h3>
-          <h4 class="resume-item-details" itemprop="description">Windmill Crank Operator &bull; Jun, 1978 &mdash; Sept, 1979</h4>
-          <p class="resume-item-copy">If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.</p>
-
+          <h3 class="resume-item-title" itemprop="name">Indiegogo</h3>
+          <h4 class="resume-item-details" itemprop="description">DevOps Lead &bull; Oct, 2012 &mdash; Feb, 2013, Contracting Feb 2013 &mdash; Jun 2013</h4>
+          <p class="resume-item-copy">Took over all DevOps tasks. Revamped Chef suite, rebuilt staging infrastructure, built out MySQL replication with high-availability and instant failover capabilities, led security and performance development efforts, provided mentoring in TDD and agile methodologies.</p>
         </div><!-- end of resume-item -->
 
         <!-- by now you're getting the picture... -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Simpson Lazer Tag</h3>
-          <h4 class="resume-item-details" itemprop="description">Front Desk Attendant &bull; Jun, 1975 &mdash; May, 1978</h4>
-          <p class="resume-item-copy">Boy, when Marge first told me she was going to the Police Academy, I thought it would be fun and exciting, you know, like the movie... Spaceballs. But instead, it's been painful and disturbing, like the movie Police Academy.</p>
-
+          <h3 class="resume-item-title" itemprop="name">BookRenter/Rafter</h3>
+          <h4 class="resume-item-details" itemprop="description">Software Engineer &bull; Jun, 2010 &mdash; Oct, 2012, Contracting Feb 2013 &mdash; Jun 2013</h4>
+          <h4 class="resume-item-details" itemprop="description">Promoted from Software Engineer, April 2012</h4>
+          <p class="resume-item-copy">Performed product and feature development for large-scale e-commerce RoR applications with complex dynamic pricing engine and automated distributor network. Transitioned to DevOps team in July 2011, with an emphasis on Chef for systems automation. Led projects to upgrade five large-scale applications and ~80 backend scripts to Rails 3, and Ruby 1.9.</p>
         </div><!-- end of resume-item -->
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Student Technology Collaborative, Yale University</h3>
+          <h4 class="resume-item-details" itemprop="description">Lead Developer &bull; Summer 2008 &mdash; Spring 2010, (two full-time summers, part-time otherwise)</h4>
+          <p class="resume-item-copy">Led project team writing RoR department management applications. Responsible for interviewing, selecting, and training new team members, assisting with project management and release scheduling, and full-time development.</p>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Student Technology Collaborative, Yale University</h3>
+          <h4 class="resume-item-details" itemprop="description">Coordinator &bull; Fall 2007 &mdash; Spring 2010, (part-time)</h4>
+          <p class="resume-item-copy">Supervised other student employees in university tech support group. Responsible for managing all tech support for approximately 500 students, both in communicating with students, coordinating other technicians and in directly performing repairs.</p>
+        </div>
 
       </section>
       <!-- end Experience -->
@@ -90,9 +126,9 @@
         </header>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Springfield College</h3>
-          <h4 class="resume-item-details" itemprop="description">Associates Degree, Business Management &bull; 1984 &mdash; 1986</h4>
-          <p class="resume-item-copy">If you had any meaningful roles at college, feel free to write about them here.</p>
+          <h3 class="resume-item-title" itemprop="name">Yale University</h3>
+          <h4 class="resume-item-details" itemprop="description">B.S., Mechanical Engineering &bull; 2006 &mdash; 2010</h4>
+          <p class="resume-item-copy">Additional coursework equivalent to a minor in Computer Science (no formal minor available)</p>
         </div>
 
       </section>
@@ -121,33 +157,6 @@
 
       </section>
       <!-- end Projects -->
-      {% endif %}
-
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Donut design</h4>
-          <p class="resume-item-copy">Sprinkle art, icing design, eclair management, taste testing, donut/coffee pairing research</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Craft beer brewing</h4>
-          <p class="resume-item-copy">Hops inspection, brew testing, distribution management, bottle label design, festival and event management</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Family leadership</h4>
-          <p class="resume-item-copy">Bread winning, conflict resolution, couch inspection, TV longevity testing</p>
-        </div>
-
-      </section>
-      <!-- end Skills -->
       {% endif %}
 
       {% if site.resume_section_recognition %}
@@ -222,12 +231,6 @@
       </section>
       <!-- end Links -->
       {% endif %}
-
-      <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
-      </footer>
-
     </div>
 
   </body>
